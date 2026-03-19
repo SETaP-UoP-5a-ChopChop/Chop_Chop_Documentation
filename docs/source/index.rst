@@ -1,18 +1,15 @@
 .. SETAP_Group5A_ChopChop documentation master file, created by
    sphinx-quickstart on Thu Mar 19 13:27:40 2026.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
 
-SETAP_Group5A_ChopChop documentation
-====================================
+ChopChop Documentation
+=======================
 
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
-
+Welcome to the documentation for ChopChop, a recipe manager application
+built by Group 5A as part of the SETaP module at the University of Portsmouth.
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-asdfghjkl
+   setup
+   api
