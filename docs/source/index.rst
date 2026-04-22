@@ -11,5 +11,6 @@ built by Group 5A as part of the SETaP module at the University of Portsmouth.
    :maxdepth: 2
    :caption: Contents:
 
+   introduction
    setup
    api
