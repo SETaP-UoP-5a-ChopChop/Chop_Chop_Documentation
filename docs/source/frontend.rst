@@ -7,6 +7,6 @@ Each individaul screen is its own file in the front end folder, where different 
 Index
 ------
 
-```{note} The index page is the home page of the app. From here the user can navigate to the recipe search page, the saved recipes page, the users pantry page and the shopping list page.
+{note} The index page is the home page of the app. From here the user can navigate to the recipe search page, the saved recipes page, the users pantry page and the shopping list page.
 At the bottom of the index screen is the sign in button, where the user can login if they already have an account or follow the prompts to create a new one.
 The user can also navigate to the settings page via the burger menu in the top right corner of the page where they can see their account information.
