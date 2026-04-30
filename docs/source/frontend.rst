@@ -7,10 +7,6 @@ The frontend communicates with the backend API to retrieve data, process user ac
 
 Each individual screen is stored as its own file within the frontend folder, allowing for a clean project structure and seamless navigation between pages.
 
-.. note::
-
-   The frontend has been designed with simplicity and usability in mind, ensuring users can quickly access features with minimal effort.
-
 -----------------------------------
 
 Main Features
@@ -52,10 +48,6 @@ Users can:
 - Follow the prompts to create a new account
 - Access personalised saved data once signed in
 
-.. tip::
-
-   Signing in allows recipes, pantry items, and shopping lists to be saved between sessions.
-
 -----------------------------------
 
 Settings Menu
@@ -69,10 +61,6 @@ From the settings page, users are able to:
 - Manage preferences
 - Update profile settings
 - Access additional app options
-
-.. warning::
-
-   Some account features may require the user to be signed in first.
 
 -----------------------------------
 
