@@ -1,12 +1,84 @@
 Frontend
 ====================
 
-The frontend of ChopChop is built using ReactNative, a JavaScript library for building user interfaces. The frontend is responsible for providing an intuitive and responsive interface for users to interact with the application. It communicates with the backend API to fetch data and perform actions based on user input.
-Each individaul screen is its own file in the front end folder, where different buttons seamlessly take the user between screens.
+The frontend of **ChopChop** is built using **React Native**, a JavaScript library for building user interfaces. It is responsible for delivering an intuitive, responsive, and user-friendly experience across the application.
+
+The frontend communicates with the backend API to retrieve data, process user actions, and keep the interface updated in real time.
+
+Each individual screen is stored as its own file within the frontend folder, allowing for a clean project structure and seamless navigation between pages.
+
+.. note::
+
+   The frontend has been designed with simplicity and usability in mind, ensuring users can quickly access features with minimal effort.
+
+-----------------------------------
+
+Main Features
+-------------
+
+The frontend provides access to the following core features:
+
+- Recipe Search  
+- Saved Recipes  
+- Pantry Management  
+- Shopping List  
+- User Accounts  
+- Settings & Preferences  
+
+-----------------------------------
 
 Index
 ------
 
-{note} The index page is the home page of the app. From here the user can navigate to the recipe search page, the saved recipes page, the users pantry page and the shopping list page.
-At the bottom of the index screen is the sign in button, where the user can login if they already have an account or follow the prompts to create a new one.
-The user can also navigate to the settings page via the burger menu in the top right corner of the page where they can see their account information.
+The **Index page** acts as the home page of the application and serves as the main navigation hub for users.
+
+From this screen, users can quickly navigate to:
+
+- **Recipe Search Page**
+- **Saved Recipes Page**
+- **Pantry Page**
+- **Shopping List Page**
+
+-----------------------------------
+
+Sign In / Account Access
+------------------------
+
+At the bottom of the Index screen is the **Sign In** button.
+
+Users can:
+
+- Log in to an existing account
+- Follow the prompts to create a new account
+- Access personalised saved data once signed in
+
+.. tip::
+
+   Signing in allows recipes, pantry items, and shopping lists to be saved between sessions.
+
+-----------------------------------
+
+Settings Menu
+-------------
+
+Users can also navigate to the **Settings Page** via the burger menu located in the top-right corner of the screen.
+
+From the settings page, users are able to:
+
+- View account information
+- Manage preferences
+- Update profile settings
+- Access additional app options
+
+.. warning::
+
+   Some account features may require the user to be signed in first.
+
+-----------------------------------
+
+Navigation Structure
+--------------------
+
+The app uses smooth screen-to-screen navigation, allowing users to move quickly between pages using buttons and menu options.
+
+This creates a fast and responsive mobile experience consistent with modern app design.
