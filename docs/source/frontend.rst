@@ -37,19 +37,6 @@ From this screen, users can quickly navigate to:
 
 -----------------------------------
 
-Sign In / Account Access
-------------------------
-
-At the bottom of the Index screen is the **Sign In** button.
-
-Users can:
-
-- Log in to an existing account
-- Follow the prompts to create a new account
-- Access personalised saved data once signed in
-
------------------------------------
-
 Settings Menu
 -------------
 
@@ -64,9 +51,7 @@ From the settings page, users are able to:
 
 -----------------------------------
 
-Navigation Structure
---------------------
-
-The app uses smooth screen-to-screen navigation, allowing users to move quickly between pages using buttons and menu options.
-
-This creates a fast and responsive mobile experience consistent with modern app design.
+Recipe Search
+----------------
+The **Recipe Search** feature allows users to search for recipes based on an ingredient they want to use when cooking. Users can enter keywords to find recipes that match their needs.
+The search results are displayed in a list format, showing the recipe name, a brief description, and an image. Users can click on a recipe to view more details, including the ingredients required and step-by-step cooking instructions.
