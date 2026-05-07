@@ -29,6 +29,7 @@ The **Pantry Manager** converts the data recieved from the API into a format tha
 
 Recipe Manager
 ----------------
+
 The **Recipe Manager** is responsible for managing recipes within the application. It allows users to search for recipes based on ingredients, save their favorite recipes, and view recipe details. The manager interacts with the database to store and retrieve recipe information, ensuring that users can easily access and manage their recipes.
 ----------------
 
