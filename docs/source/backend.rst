@@ -8,8 +8,45 @@ The **backend** of the application is responsible for data management and commun
 Accounts Manager
 ----------------
 
-The **accounts manager** is responsible for handling user accounts, including registration, authentication, and profile management. It ensures that users can securely create and manage their accounts while providing necessary functionalities such as password recovery and account settings.
+The **Accounts Manager** is responsible for handling user authentication and account management within the application. It allows users to register, log in, reset passwords, and securely manage their account credentials. The manager interacts with the database to store and retrieve user information while ensuring that passwords are securely encrypted using bcrypt hashing.
 
+The **Accounts Manager** uses several request models to define and validate the structure of data received from the frontend. These models ensure that all account-related requests are properly formatted before being processed by the backend.
+
+The **Accounts Manager**’s request classes include:
+
+- **LoginRequest**: Defines the data required for a user to log in. It includes:
+    - Email
+    - Password
+- **RegisterRequest**: Defines the data required when a new user registers an account. It includes:
+    - Username
+    - Email
+    - Password
+- **ForgotPasswordRequest**: Defines the data required when a user requests a password reset. It includes:
+    - Email
+- **ResetPasswordRequest**: Defines the data required when resetting a password. It includes:
+    - Email
+    - New Password
+    - Confirm Password
+
+The **get_user_by_email** method is responsible for retrieving a user from the database using their email address. It opens a database connection, executes a query to search for the user, and returns the matching user record if one exists. This method is used throughout the Accounts Manager to verify user existence during login, registration, and password reset operations.
+
+The **create_user** method is responsible for creating a new user account in the database. Before storing the password, the method securely hashes it using bcrypt encryption to ensure sensitive user data is protected. The method then inserts the new user into the database and returns the created user’s information. If the email already exists or a database error occurs, an appropriate HTTP error response is returned.
+
+The **verify_password** method is responsible for validating a user’s login credentials. It compares the plain-text password entered by the user with the hashed password stored in the database using bcrypt’s secure password comparison functionality. This ensures that passwords are never stored or compared in plain text.
+
+The **login_user** method is responsible for authenticating a user during login. It searches the database for a user with the provided email address and verifies that the entered password matches the stored hashed password. If the credentials are valid, the method returns the user’s information; otherwise, it returns a failed login response.
+
+The **update_user_password** method is responsible for updating a user’s password in the database. The new password is securely hashed before being stored. The method updates the password for the matching email address and returns the number of affected database rows to indicate whether the operation was successful.
+
+The **hash_password** helper method is responsible for generating a secure bcrypt hash from a plain-text password. This helper function centralizes password hashing functionality to ensure consistency and security throughout the Accounts Manager.
+
+The **Accounts Manager** also defines several API routes that allow the frontend to interact with the authentication system:
+- **register** endpoint is responsible for creating a new user account. It validates the registration data, checks if the email is already registered, creates the user in the database, and returns a success response containing the user information.
+- **login** endpoint is responsible for authenticating existing users. It verifies the provided email and password against the stored database records and returns a successful login response if the credentials are correct. If authentication fails, an unauthorized error response is returned.
+- **forgot_password** endpoint is responsible for verifying whether a user account exists for a provided email address. If the email exists, the endpoint returns a response allowing the user to proceed with the password reset process. In a production environment, this endpoint would typically trigger a password reset email.
+- **reset_password** endpoint is responsible for securely updating a user’s password. It validates that the new password and confirmation password match, checks that the user exists, updates the password in the database, and returns a success response once the password has been changed successfully.
+
+Overall, the **Accounts Manager** ensures secure authentication and user account management by combining database operations, password encryption, validation models, and API endpoints into a centralized authentication system that can be reliably used by both the frontend and backend of the application.
 ----------------
 
 Pantry Manager
